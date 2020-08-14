@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<style>
+    body {
+  padding: 1rem;
+}
+.dogbert-einstein {
+  display: flex;
+  flex-direction: columns;
+  margin-left: auto;
+  margin-right: auto;
+  width: 130px;
+  margin-top: 2em;
+  margin-bottom: 1.5rem;
+}
+.box {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#sessionid {
+  width: 100%;  
+  border: 0 solid #e2e8f0;
+  margin-bottom: .5rem;
+  border-width: 1px;
+  --border-opacity: 1;
+  border-color: rgba(203,213,224,var(--border-opacity));
+  padding: 0.5rem;
+  border-radius: 5px;
+  outline-color: #6b46c1;
+  cursor: text;
+  line-height: 22px;
+  font-size: 100%;
+}
+#nameinput {
+  width: 100%;  
+  border: 0 solid #e2e8f0;
+  margin-bottom: .5rem;
+  border-width: 1px;
+  --border-opacity: 1;
+  border-color: rgba(203,213,224,var(--border-opacity));
+  padding: 0.5rem;
+  border-radius: 5px;
+  outline-color: #6b46c1;
+  cursor: text;
+  line-height: 22px;
+  font-size: 100%;
+}
+.labelz {
+  font-weight: 600;
+  font-family: Roboto, san-serif, arial;
+}
+.buttons {
+  margin-top: 0.5rem;
+}
+#join {
+  width: 99%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  font-family: arial;
+  background: #6b46c1;
+  color: white;
+  border-radius: 4px;
+  line-height: 22px;
+  font-size: 100%;
+  box-sizing: content-box;
+  border: 0 solid white;
+  cursor: pointer;
+}
+#join:hover {
+  background-color: rgba(128,90,213,var(--bg-opacity));
+  --bg-opacity: 1;
+}
+#host {
+  width: 99%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  font-family: arial;
+  background: #e2e8f0;
+  border-radius: 4px;
+  line-height: 22px;
+  font-size: 100%;
+  box-sizing: content-box;
+  border: 0 solid white;
+  cursor: pointer;
+}
+#host:hover {
+  background-color: rgba(237,242,247,var(--bg-opacity));
+  --bg-opacity: 1;
+}
+</style>
+
+<html>
+
+<head>
+    <title>Sniff out the answers | Trivia Dog</title>
+  </head>
+    <body>
+    <div id="logo">
+      <header>
+      <img class="dogbert-einstein" src="https://i.pinimg.com/originals/b7/98/b5/b798b5d12e7cb7e0ce896944cbc7bcdc.jpg" alt="woof equals mc squared">
+      </header>
+    </div>
+    <main class="box">
+    <div id="bars">
+      <form>
+        <p>
+        <label class="labelz" for="sessionid">SESSION ID</label>
+        </p>
+        <input type="text" id="sessionid" placeholder="ABC123">
+        <p>
+        <label class="labelz" for="nameinput">YOUR NAME</label>
+        </p>
+        <input type="text" id="nameinput" placeholder="ROG">
+      </form>
+      </div>
+      <div class="buttons">
+        <button type="submit" id="join">JOIN ROOM</button>
+        <button type="submit" id="host">HOST NEW SESSION</button>
+      
+      </main>
+    
+  </body>
+  </html>
